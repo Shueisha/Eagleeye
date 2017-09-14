@@ -9,9 +9,9 @@ monkey.patch_all()
 # Non-standard libraries that are being used
 from gevent import joinall, sleep, spawn
 from gevent.queue import Queue
-from shodan import WebAPI
 
 # Standard python stuff
+import shodan
 import re
 import socket
 import sys
@@ -19,7 +19,7 @@ import time
 import os
 
 # Constants
-API_KEY		= 'get out of it'
+SHODAN_API_KEY = 'get out of it'
 NUM_WORKERS	= 25
 #del sys.argv[0]
 #for arg in sys.argv:

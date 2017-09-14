@@ -19,7 +19,7 @@ import time
 import os
 
 # Constants
-API_KEY		= 'qNcEe6p3UsooSfYjpPOPh3VTEFm3Jfxb'
+API_KEY		= 'get out of it'
 NUM_WORKERS	= 25
 #del sys.argv[0]
 #for arg in sys.argv:

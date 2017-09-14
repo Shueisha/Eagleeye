@@ -18,7 +18,7 @@ from gevent import monkey
 monkey.patch_all()
 
 # API Key
-SHODAN_API_KEY = 'qNcEe6p3UsooSfYjpPOPh3VTEFm3Jfxb'
+SHODAN_API_KEY = 'get out of it'
 filter = 'netwave camera'
 pool = Pool(1000)
 

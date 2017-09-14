@@ -4,7 +4,7 @@
 # This script is designed to perform a search on shodan
 # then take what comes back and "do stuff" to it.
 # the 'checkcam' function is the 'do stuff to the results' function.
-# AMMENDED BY Oz -- changed to allow new api format, imported shodan alone defined key @apikey comment
+# AMMENDED BY Shueisha -- changed to allow new api format, imported shodan alone defined key @apikey comment
 
 from __future__ import with_statement
 import time

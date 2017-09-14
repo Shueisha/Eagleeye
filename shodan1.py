@@ -3,10 +3,6 @@
 # Written by Dan Tentler / AtenLabs
 # This script is designed to perform a search on shodan
 # then take what comes back and "do stuff" to it.
-# this is the first incarnation of this script
-# I intend to tweak it for ease of use and relase versions of it.
-# Ignore the 'checkcam' name of the function below
-# I started out using this to find webcams, like the netcams below.
 # the 'checkcam' function is the 'do stuff to the results' function.
 # AMMENDED BY Oz -- changed to allow new api format, imported shodan alone defined key @apikey comment
 

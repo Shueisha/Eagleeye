@@ -19,14 +19,15 @@ import time
 import os
 
 # Constants
-API_KEY		= '<git yer own, theyre free!'
+API_KEY		= 'qNcEe6p3UsooSfYjpPOPh3VTEFm3Jfxb'
 NUM_WORKERS	= 25
 #del sys.argv[0]
-#for arg in sys.argv:	
+#for arg in sys.argv:
 #	filter = " ".join(arg," ")
 
+#EDIT TO SEARCH
 #filter = "org:amazon port:80"
-filter = 'port:80 org:"Sony North America"' 
+filter = 'port:80 org:"Sony North America"'
 def checkCam(ip):
 		print 'Checking %s...' % ip
 		ipandport = ip.split()
@@ -49,7 +50,7 @@ def worker(queue):
 def main(queue):
 
 	# Connect to Shodan
-	api = WebAPI(API_KEY)
+	api = shodan.Shodan(SHODAN_API_KEY)
 
 	# get the first page of results
 	res = api.search(filter)
